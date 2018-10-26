@@ -5,7 +5,6 @@ import java.util.List;
 import com.dkitaw.springdemotwo.model.Users;
 import com.dkitaw.springdemotwo.repository.UserJpaRepository;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -38,4 +37,13 @@ public class UserController {
     userJpaRepository.save(users);
     return userJpaRepository.findByName(users.getName());
   }
+//   @GetMapping(value="/update/{name}")
+//   public List<UsersContact>update(@PathVariable final String name){
+    
+//     Users users = new Users();
+//     users.setTeamName("Development").setSalary(1000).setName("frelance");
+//     users.setTeamName("Nursing").setSalary(100).setName("Homecare");
+//     UsersContactRepository.save(user)
+// return UsersContactRepository.findAll();
+//   }
 }
