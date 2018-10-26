@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/users/load HTTP/1.1
+content-type: application/json
+
+{
+"name":"Winta",
+"teamName":"Holy",
+"salary":"123456"
+}
+###
+http://localhost:8080/api/users/all
